@@ -1,0 +1,82 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #fff8f0;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #ff6f61;
+  color: white;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.menu {
+  padding: 20px;
+}
+
+.item {
+  background: #ffe6e6;
+  margin: 10px auto;
+  padding: 10px;
+  width: 200px;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.item:hover {
+  transform: scale(1.1);
+  background: #ffb3b3;
+}
+
+/* Gallery Styles */
+.gallery {
+  padding: 20px;
+}
+
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.gallery-container img {
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.gallery-container img:hover {
+  transform: rotate(5deg) scale(1.1);
+}
+
+/* Animation Box */
+#cakeBox {
+  width: 100px;
+  height: 100px;
+  margin: 30px auto;
+  background: pink;
+  border-radius: 10px;
+  display: none;
+}
+
+/* Keyframe Animations */
+@keyframes bounceCake {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-50px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
